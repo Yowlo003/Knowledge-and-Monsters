@@ -1,0 +1,129 @@
+@font-face { font-family: Gagalin; src: url('Assets/Gagalin-Regular.otf'); }
+@font-face { font-family: Gagalin; font-weight: bold; src: url('Assets/Gagalin-Regular.otf');}
+@font-face { font-family: BarekDemo; src: url('Assets/BarekDemo.otf'); }
+@font-face { font-family: BarekDemo; font-weight: bold; src: url('Assets/BarekDemo.otf');}
+@font-face { font-family: FantasyMagist; src: url('Assets/FantasyMagist.otf'); }
+@font-face { font-family: FantasyMagist; font-weight: bold; src: url('Assets/FantasyMagist.otf');}
+@font-face { font-family: Anton; src: url('Assets/Anton-Regular.ttf'); }
+@font-face { font-family: Anton; font-weight: bold; src: url('Assets/Anton-Regular.ttf');}
+@font-face { font-family: Gellatio; src: url('Assets/Gellatio Regular.ttf'); }
+@font-face { font-family: Gellatio; font-weight: bold; src: url('Assets/Gellatio Regular.ttf');}
+@font-face { font-family: MagicVintage; src: url('Assets/MagicVintage.ttf'); }
+@font-face { font-family: MagicVintage; font-weight: bold; src: url('Assets/MagicVintage.ttf');}
+@font-face { font-family: QuiteMagical; src: url('Assets/QuiteMagical.ttf'); }
+@font-face { font-family: QuiteMagical; font-weight: bold; src: url('Assets/QuiteMagical.ttf');}
+
+body{
+    overflow: hidden;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+.background-1{
+    position: absolute;
+    background-image: url(Assets/2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.character{
+    position: absolute;
+    height: 250px;
+    width: 95%;
+    left: 5%;
+    top: 38%;
+    z-index: 5;
+}
+.charimg{
+    height: 250px;
+    width: 250px;
+}
+.charimg1{
+    position: absolute;
+    right: 5%;
+    height: 250px;
+    width: 250px;
+}
+.textbox{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -50px;
+    left: 0px;
+    height: 300px;
+    width: 99.3%;
+    background-color: bisque;
+    border: solid 5px;
+    border-radius: 50px;
+    border-color: #33115e;
+    box-shadow: inset 0px 0px 33px 30px rgba(169, 32, 248, 0.205);
+    z-index: 5;
+}
+.textbox h2{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 9%;
+    font-family: 'Gagalin';
+    font-size: 40px;
+    color: #2c2323;
+}
+.dialog{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 9%;
+    font-family: 'anton';
+    font-size: 20px;
+    width: 50%;
+    color: #2c2323;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap;
+}
+.dialog span{
+    font-family: 'QuiteMagical';
+    font-size: 30px;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.hidden {
+    visibility: hidden;
+}
+.dialog.reveal {
+    animation: revealText 3s linear forwards; /* Animation to gradually reveal text */
+}
+.gif{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+}
+.btn{
+    position: absolute;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: #b67eff;
+    cursor: pointer;
+    top: 71%;
+    right: 5%;
+    font-family: 'Gagalin';
+    font-size: 25px;
+    letter-spacing: 2px;
+    background-color: #451880;
+    z-index: 8;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #7d2ae8;
+}
+@keyframes revealText {
+    from {
+        width: 0; /* Start with zero width */
+    }
+    to {
+        width: 100%; /* Gradually reveal to full width */
+    }
+}

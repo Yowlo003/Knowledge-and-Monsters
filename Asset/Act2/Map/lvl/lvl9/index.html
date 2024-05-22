@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="lvln">Level 9</div>
+    <div class="inventory" id="potioninv">
+        <div id="potion-count"></div>
+        <div id="potion-count1"></div>
+        <img id="po1" class="tooltip" src="Assets/potion.png" alt="">
+        <div class="tooltiptext">+10 Health</div>
+        <img id="po2" class="tooltip1" src="Assets/potion1.png" alt="">
+        <div class="tooltiptext1">+30 Health</div>
+    </div>
+
+    <div id="healid1" class="heal-container"></div>
+    <div id="healid2" class="heal-container"></div>
+
+    <div class="container">
+        <div class="characters">
+            <div class="character" id="character1">
+                <h2>Yahiko</h2>
+                <div class="life-bar">
+                    <div class="life" id="character1-life"></div>
+                </div>
+                <div class="p1" id="playerhit">
+                    <img src="Assets/p1.gif" id="image1" class="image-glow" width="400" height="320"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="enemies">
+            <div class="enemy" id="enemy1">
+                <h2>Poison Slime</h2>
+                <div class="life-bare">
+                    <div class="life" id="enemy1-life"></div>
+                </div>
+                <div class="e1" id="enemyhit">
+                    <img src="Assets/e1.gif" id="image1" class="image-glow" width="350" height="290"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shadow">
+        <svg height="140" width="500">
+            <ellipse rx="80" ry="20" cx="120" cy="80" fill="black" stroke="black" stroke-width="3" opacity="0.3"/>
+        </svg>
+    </div>
+    <div class="shadowe">
+        <svg height="140" width="1000">
+            <ellipse rx="180" ry="20" cx="180" cy="80" fill="black" stroke="black" stroke-width="3" opacity="0.3"/>
+        </svg>
+    </div>
+
+    <div class="button-container">
+        <button id="start-btn"><span>&#9876;</span></button>
+    </div>
+
+    <p id="instruction">Don't use keyboard!</p>
+    
+    <div id="menu-screen" class="menu" style="display: none;">
+        <h2>Game Over</h2>
+        <button id="restart-btn">
+            <img src="Assets/r.png" alt="Restart">
+        </button>
+        
+        <button class="gray" id="next-level-btn" type="button" disabled>
+            <img src="Assets/n.png" alt="Next Level">
+        </button>
+        
+        <button class="gray" id="quit-btn" type="button" disabled>
+            <img src="Assets/m.png" alt="Quit">
+        </button>
+        
+    </div>
+    
+    <div id="question-container" class="question-container"></div>
+
+    <div class="containerskill">
+
+        <div id="high-gif-container" class="gif-container"></div>
+        <div id="high1-gif-container" class="gif-container"></div>
+        <div id="low-gif-container" class="gif-container"></div>
+        <div id="low1-gif-container" class="gif-container"></div>
+
+        <div id="phigh-gif-container" class="gif-container"></div>
+        <div id="plow-gif-container" class="gif-container"></div>
+
+    </div>
+
+    <!-- Word game components -->
+    <div id="word-game" class="wordgame">
+        <div id="grid"></div>
+        <button id="backspace-btn">&#11160;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

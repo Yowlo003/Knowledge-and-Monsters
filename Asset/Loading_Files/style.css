@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 120px;
+    background-image: url(Images/LoadingBG3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;   
+}
+
+.title img{ 
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    position: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90px;
+}
+.progress-container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 40%;
+    stroke: black;
+    stroke-width: 3;
+}
+
+.progress-bar {
+    width: 0;
+    height: 40px;
+    background-color: rgb(141, 90, 221);
+    text-align: end;
+    line-height: 40px;
+    color: white;
+    background-image: url(Images/Fire-loading.gif);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position-x: right;
+    transition: width 1s ease; 
+    padding-right: 40px;
+    border-radius: 10px;
+}
+.click-text {
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(207, 47, 146);
+    animation: popInOut 0.8s ease infinite alternate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font: bold;
+}
+
+@keyframes popInOut {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
