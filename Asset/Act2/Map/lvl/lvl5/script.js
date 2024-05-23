@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function() {
             switch (questionIndex) {
                 case 0:
                     questionText = "What is a story written in verse?";
-                    correctAnswer = "peom";
+                    correctAnswer = "poem";
                     break;
                 case 1:
                     questionText = "What is a conflict between a character and an external force?";
@@ -642,7 +642,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     break;
                 default:
                     questionText = "What is a story written in verse?";
-                    correctAnswer = "peom";
+                    correctAnswer = "poem";
             }
     
             // Create HTML elements for the question
